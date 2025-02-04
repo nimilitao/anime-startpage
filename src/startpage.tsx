@@ -31,12 +31,12 @@ function Startpage() {
   }, [img])
 
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <main className="flex flex-col items-center justify-center">
         <h1
           style={{
             fontSize: '2.8rem',
-            textShadow: `2px 0px 0px ${primaryColor}`,
+            textShadow: `3px 0px 0px ${primaryColor}`,
             marginTop: '2rem',
           }}
         >
