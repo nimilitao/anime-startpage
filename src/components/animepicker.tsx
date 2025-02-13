@@ -63,16 +63,31 @@ function AnimePicker({
         style={{ opacity: hovered ? 0.6 : 1 }}
       />
       {hovered && (
-        <label className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 cursor-pointer">
+        <label
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            color: 'white',
+            padding: '10px 20px',
+            border: '1px solid white',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            zIndex: 10,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
           <input
             type="file"
             accept="image/*"
-            className="hidden"
+            style={{ display: 'none' }}
             onChange={handleImageUpload}
           />
-          <span className="px-4 py-2 border-2 border-white text-white rounded-lg">
-            Upload Image/GIF
-          </span>
+          Upload Image/GIF
         </label>
       )}
     </div>
