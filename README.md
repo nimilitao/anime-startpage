@@ -65,9 +65,3 @@ Then, you need to set it up in your browser, setting the page as start page. To 
 You can adjust the bookmarks of your startpage by modifying the file src/data/sections.tsx.
 
 For more detailed customization, feel free to explore the code and adjust as needed!
-
-## Technologies
-- [TypeScript](https://www.typescriptlang.org/)
-  - [ColorThief](https://lokeshdhakar.com/projects/color-thief/)
-  - [Tailwind CSS](https://tailwindcss.com/)
-  - [Vite](https://vitejs.dev/)
