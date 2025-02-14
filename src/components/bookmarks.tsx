@@ -7,9 +7,13 @@ interface SectionData {
 
 interface SocialLinksProps {
   sections: SectionData[]
+  textColor?: string
 }
 
-const Bookmarks: React.FC<SocialLinksProps> = ({ sections }) => {
+const Bookmarks: React.FC<SocialLinksProps> = ({
+  sections,
+  textColor = '#636363',
+}) => {
   return (
     <div className="flex flex-row justify-between font-inter">
       {sections.map((section, index) => (
@@ -30,12 +34,22 @@ const Bookmarks: React.FC<SocialLinksProps> = ({ sections }) => {
                 className="text-left text-lowercase"
                 style={{ marginTop: '10px' }}
               >
-                <span className="text-[#686868]">└ </span>{' '}
+                <span className="text-[#636363]">└ </span>
                 <a
                   href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="no-underline text-[#686868] hover:text-[#A1A1A1]"
+                  className="no-underline transition-all duration-300"
+                  style={{
+                    color:'#686868',
+                    textShadow: 'none',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = textColor
+                    e.currentTarget.style.textShadow = `0 0 15px ${textColor}`
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = '#636363'
+                    e.currentTarget.style.textShadow = 'none'
+                  }}
                 >
                   {item.label}
                 </a>

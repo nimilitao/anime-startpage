@@ -50,7 +50,7 @@ function Startpage() {
           />
           <Clock />
           <Search borderColor={primaryColor} />
-          <Bookmarks sections={sections} />
+          <Bookmarks sections={sections} textColor={primaryColor} />
         </div>
       </main>
     </ThemeProvider>
