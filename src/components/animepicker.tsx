@@ -26,8 +26,7 @@ function AnimePicker({
   const [hovered, setHovered] = useState(false)
 
   function extractPrimaryColor(imageSrc: string) {
-    const extractedColor = '#FFA500'
-    onColorExtract(extractedColor)
+    onColorExtract(imageSrc)
   }
 
   useEffect(() => {
@@ -41,9 +40,9 @@ function AnimePicker({
       reader.onload = (e) => {
         const result = e.target?.result as string
         setImage(result)
-        addImageOnLocalStorage(result)
-        onImageChange(result)
         extractPrimaryColor(result)
+        onImageChange(result)
+        addImageOnLocalStorage(result)
       }
       reader.readAsDataURL(file)
     }

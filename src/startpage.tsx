@@ -14,7 +14,7 @@ let image = getImageOnLocalStorage() || Gif
 
 const defaultVariant = {
   img: image,
-  primary: 'hsl(261, 81%, 43%)',
+  primary: '#757198',
 }
 
 function Startpage() {
