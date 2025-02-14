@@ -6,7 +6,7 @@ A simple anime inspired startpage where users can set their own image, and the d
   <img alt="image light-theme" src="https://github.com/user-attachments/assets/4f219dfe-dab6-4894-aef9-01fdce285e2e">
 </div>
 
-## Purpose
+## Background
 Recently I watched the "Dandadan" series and felt the urge to program something about it. Then, I took inspo from other programmers who have made startpages based on animes, and I created this project just for fun in one night while listening to Dandadan's opening '[Otonoke](https://www.youtube.com/watch?v=tf9vUQgg1b4&ab_channel=CrunchyrollBrasil)' in looping on Spotify (it was so cool!).
 
 ## Technologies
@@ -21,7 +21,7 @@ To set up your own instance of the startpage:
 
 Clone the repository:
 ```
-[git clone https://github.com/nimilitao/anime-startpage.git
+git clone https://github.com/nimilitao/anime-startpage.git
 
 cd startpage-anime
 ```
@@ -36,7 +36,7 @@ Run the development server:
 npm run dev
 ```
 
-Visit the site at http://localhost:3000 to see it in action and deploy it.
+Visit the site at http://localhost:3000 to see it in action, customize anything you want, and deploy it.
 
 Then, you need to set it up in your browser, setting the page as start page. To set your deployed startpage as the homepage or new tab page, follow the instructions for your preferred browser:
 
