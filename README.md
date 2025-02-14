@@ -1,19 +1,12 @@
 # Anime startpage
-A simple anime inspired startpage where users can set their own image, and the dominant color is automatically extracted to customize the theme of the page. This project is inspired by animes, but you can upload any image you like!
+Recently I watched the "Dandadan" series and felt the urge to program something about it. Then, I took inspo from other programmers who have made startpages based on animes, and I created this project just for fun in one night while listening to Dandadan's opening '[Otonoke](https://www.youtube.com/watch?v=tf9vUQgg1b4&ab_channel=CrunchyrollBrasil)' in looping on Spotify (it was so cool!).
+
+So, I made this simple anime inspired startpage where users can set their own image, and the dominant color is automatically extracted to customize the theme of the page. This project is inspired by animes, but you can upload any image you like!
 
 <div align="center">
   <img alt="image dark-theme" src="https://github.com/user-attachments/assets/78925e46-2181-4c15-a32b-c7119f8fab8c">
   <img alt="image light-theme" src="https://github.com/user-attachments/assets/4f219dfe-dab6-4894-aef9-01fdce285e2e">
 </div>
-
-## Background
-Recently I watched the "Dandadan" series and felt the urge to program something about it. Then, I took inspo from other programmers who have made startpages based on animes, and I created this project just for fun in one night while listening to Dandadan's opening '[Otonoke](https://www.youtube.com/watch?v=tf9vUQgg1b4&ab_channel=CrunchyrollBrasil)' in looping on Spotify (it was so cool!).
-
-## Technologies
-- [TypeScript](https://www.typescriptlang.org/)
-  - [Colorthief](https://lokeshdhakar.com/projects/color-thief/)
-  - [Tailwind CSS](https://tailwindcss.com/)
-  - [Vite](https://vitejs.dev/)
 
 ## Getting Started
 
@@ -65,3 +58,9 @@ Then, you need to set it up in your browser, setting the page as start page. To 
 You can adjust the bookmarks of your startpage by modifying the file src/data/sections.tsx.
 
 For more detailed customization, feel free to explore the code and adjust as needed!
+
+## Technologies
+- [TypeScript](https://www.typescriptlang.org/)
+  - [Colorthief](https://lokeshdhakar.com/projects/color-thief/)
+  - [Tailwind CSS](https://tailwindcss.com/)
+  - [Vite](https://vitejs.dev/)
